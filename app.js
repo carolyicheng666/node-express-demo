@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+var Mock = require('mockjs');
+
 //设置跨域访问
 app.all('*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -12,24 +14,31 @@ app.all('*', function(req, res, next) {
 });
 
 var getData = [{
-    data: 213,
-    num: 444,
-    age: 12
-  },
-  {
-    data: 456,
-    num: 678,
-    age: 13
-  }
-];
+  data: 213,
+  num: 444,
+  age: 12
+},{
+  data: 456,
+  num: 678,
+  age: 13
+}];
 
 var postData = {error: 0, status: "success"};
+
+var mockData = Mock.mock({
+  'error': 0,
+  'list|10': [{
+    'id|+1': 1
+  }]
+})
 
 //写个接口
 app.get('/get', function(req, res) {
   res.status(200).json(getData)
 }).post('/post', function(req, res) {
   res.status(200).json(postData)
+}).get('/mock', function(req, res) {
+  res.status(200).json(mockData)
 });
 
 //配置服务端口
