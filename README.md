@@ -12,7 +12,7 @@ $ npm i
 
 然后运行：
 ``` bash
-$ node app.js
+$ npm start
 ```
 
 打开 `index.html` 即可看到效果
