@@ -5,14 +5,22 @@
 How to use
 ---
 
-先安装依赖：
+使用**npm**  
 ``` bash
 $ npm i
 ```
 
-然后运行：
 ``` bash
 $ npm start
+```
+
+或者使用**yarn**  
+``` bash
+$ yarn install
+```
+
+``` bash
+$ yarn start
 ```
 
 打开 `index.html` 即可看到效果
