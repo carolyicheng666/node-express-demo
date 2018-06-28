@@ -1,34 +1,30 @@
-用 node + express 模拟后台接口
+# 用 node + express 模拟后台接口
 
-
-
-How to use
----
+## How to use
 
 使用**npm**  
+
 ``` bash
-$ npm i
+npm i
 ```
 
 ``` bash
-$ npm start
+npm start
 ```
 
 或者使用**yarn**  
+
 ``` bash
-$ yarn install
+yarn install
 ```
 
 ``` bash
-$ yarn start
+yarn start
 ```
 
 打开 `index.html` 即可看到效果
 
-
-
-关于传参
----
+## 关于传参
 
 get：直接用 `req.query` 就可取到，[点击跳转API](http://www.expressjs.com.cn/4x/api.html#req.query)  
 
