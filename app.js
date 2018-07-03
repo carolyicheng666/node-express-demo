@@ -53,7 +53,7 @@ app.get('/get', function(req, res) {
 });
 
 //配置服务端口
-var server = app.listen(3000, function() {
+var server = app.listen(3000, 'localhost', function() {
 
   var host = server.address().address;
 
