@@ -31,3 +31,7 @@ get：直接用 `req.query` 就可取到，[点击跳转API](http://www.expressj
 post：放在 `req.body` 中，需要引入 `body-parser`，[点击跳转API](http://www.expressjs.com.cn/4x/api.html#req.body)  
 
 更多关于[express API](http://www.expressjs.com.cn/4x/api.html)
+
+## Fix
+
+- [Node.js server.address().address returns ::](https://stackoverflow.com/questions/33853695/node-js-server-address-address-returns)
