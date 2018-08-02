@@ -34,7 +34,17 @@
     }
   }
   
-  init.get();
-  init.post();
-  init.mock();
+  // init.get();
+  // init.post();
+  // init.mock();
+  /* $.when(init.get(), init.post(), init.mock()).done(function() {
+    console.log("success")
+  }).fail(function() {
+    console.log("error")
+  }) */
+  $.when(init.get()).done(function() {
+    init.post()
+  }).done(function() {
+    init.mock()
+  })
 })(jQuery);
